@@ -1,0 +1,10 @@
+<%= provide(:title, "Contact") %>
+<h1>Contact Us</h1>
+<div class="form">
+  <%= simple_form_for @contact do |f| %>
+    <%= f.input :name, autofocus: true %>
+    <%= f.input :email %>
+    <%= f.input :content, as: :text %>
+    <%= f.button :submit, "Submit", class: "submit" %>
+  <% end %>
+</div>
