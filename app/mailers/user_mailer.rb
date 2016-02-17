@@ -3,7 +3,8 @@ class UserMailer < ApplicationMailer
   
   def contact_email(contact)
     @contact = contact
-    mail(to: Rails.application.secrets.owner_email,
+    mail(to:      Rails.application.secrets.owner_email,
+         from:    "no-reply@branchew.com",
          subject: "Mailing List Jean Dorancy")
   end
   
