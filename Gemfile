@@ -48,3 +48,10 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  # PostgeSQL and rails_12factor for Heroku deployment
+  gem 'pg'
+  gem 'rails_12factor'
+end
+  
+
