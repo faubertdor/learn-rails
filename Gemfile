@@ -35,6 +35,13 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :test do
+  # MiniTest with RSpec like syntax
+  gem 'minitest-spec-rails'
+  # Integrate MiniTest with Capybara
+  gem 'minitest-rails-capybara'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
