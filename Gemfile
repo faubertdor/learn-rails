@@ -40,6 +40,8 @@ group :test do
   gem 'minitest-spec-rails'
   # Integrate MiniTest with Capybara
   gem 'minitest-rails-capybara'
+  # Used for test doubles
+  gem 'spy'
 end
 
 group :development do

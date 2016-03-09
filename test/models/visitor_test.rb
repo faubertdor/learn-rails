@@ -14,5 +14,4 @@ describe Visitor do
     visitor.wont_be :valid?
     visitor.errors[:email].must_be :present?
   end
-  
 end
